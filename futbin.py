@@ -7,8 +7,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-players = pd.read_csv('C:/Users/fares/OneDrive/Desktop/PYTHON/Scrap/players2.csv')
-icons = pd.read_csv('C:/Users/fares/OneDrive/Desktop/PYTHON/Scrap/Icons.csv')
+players = pd.read_csv('players.csv')
+icons = pd.read_csv('icons.csv')
 
 def clean_players(df):
     df.rename(columns={'In Game Stats': 'IGS'}, inplace=True)
